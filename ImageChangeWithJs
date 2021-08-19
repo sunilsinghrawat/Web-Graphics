@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>title</title>
+<style>
+*{margin:0px;padding:0px;}
+.slider{max-width:500px;border:5px solid #ccc;padding:10px;width:100%;margin:0 auto;box-sizing:border-box;}
+.slider img{max-width:100%;}
+</style>
+</head>
+<body>
+	<div class="slider" >
+		<img src="https://placeimg.com/640/480/arch" id="slider" />
+	</div>
+	
+	<script>
+	
+    	var imgChange =[
+            'https://placeimg.com/640/480/arch',
+            'https://placeimg.com/640/480/tech',
+            'https://placeimg.com/640/480/nature'
+        ]
+		var position = 1;
+		
+		function slider() {
+			if(position == imgChange.length)
+			{
+				position = 0;
+			}
+			document.getElementById("slider").src= imgChange[position] ;
+			position++;
+		}
+		
+		setInterval(slider, 1000);
+		
+		
+	</script>
+</body>
+</html>
