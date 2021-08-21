@@ -34,7 +34,7 @@ https://pngimg.com/<br/>
 <strong>compress jpeg png file</strong>
 https://tinypng.com/<br/>
 
-<strong>Remove Image/video Background</strong>
+<strong>Remove Image/video Background</strong><br/>
 https://www.remove.bg/<br/>
 https://www.unscreen.com/<br/>
 
