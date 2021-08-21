@@ -31,7 +31,7 @@ https://www.cleanpng.com/<br/>
 https://favpng.com/<br/>
 https://pngimg.com/<br/>
 
-<strong>compress jpeg png file</strong>
+<strong>compress jpeg png file</strong><br/>
 https://tinypng.com/<br/>
 
 <strong>Remove Image/video Background</strong><br/>
