@@ -31,6 +31,11 @@ https://www.cleanpng.com/<br/>
 https://favpng.com/<br/>
 https://pngimg.com/
 
+<strong>compress jpeg png file</strong>
+https://tinypng.com/
+
+<strong>Remove Image Background</strong>
+https://www.remove.bg/
 
 <strong>Website Inspiration</strong><br/>
 http://cssnectar.com/<br/>
