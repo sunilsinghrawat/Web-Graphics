@@ -9,13 +9,11 @@ https://iconmonstr.com/<br/>
 https://eos-icons.com/<br/>
 https://remixicon.com/<br/>
 https://boxicons.com/<br/>
+https://icofont.com/icons<br/>
 
 <strong>Stroke Icon</strong><br/>
 https://tablericons.com/<br/>
 https://feathericons.com/<br/>
-
-<strong>Only SVG Icon</strong><br/>
-https://icofont.com/icons<br/>
 
 <strong>Animated Icon</strong><br/>
 https://lordicon.com/<br/>
@@ -51,3 +49,5 @@ https://themeisle.com/illustrations/<br/>
 https://iradesign.io/gallery/illustrations<br/>
 https://www.manypixels.co/gallery<br/>
 
+<strong>Wavy SVG Background</strong><br/>
+https://getwaves.io/<br/>
