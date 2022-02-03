@@ -42,6 +42,7 @@ https://unsplash.com/<br/>
 
 <strong>Online Photo Editor</strong><br/>
 https://www.photopea.com/<br/>
+https://pixlr.com/<br/>
 
 <strong>Illustrations (Icons, Character, Object & Background)</strong><br/>
 https://undraw.co/illustrations<br/>
