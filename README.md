@@ -59,3 +59,6 @@ https://templatemo.com/<br/>
 
 <strong>Download free Website Mockup(PSD)</strong><br/>
 https://html.design/<br/>
+
+<strong>Download free VideoClip</strong><br/>
+https://dronestock.com/<br/>
