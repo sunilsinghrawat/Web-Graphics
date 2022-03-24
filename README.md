@@ -52,6 +52,7 @@ https://undraw.co/illustrations<br/>
 https://themeisle.com/illustrations/<br/>
 https://iradesign.io/gallery/illustrations<br/>
 https://www.manypixels.co/gallery<br/>
+https://www.vecteezy.com/<br/>
 
 <strong>Wavy SVG Background</strong><br/>
 https://getwaves.io/<br/>
