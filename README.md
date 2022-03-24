@@ -10,6 +10,7 @@ https://eos-icons.com/<br/>
 https://remixicon.com/<br/>
 https://boxicons.com/<br/>
 https://icofont.com/icons<br/>
+https://www.streamlinehq.com/emojis/kawaii-emoji<br/>
 
 <strong>Stroke Icon</strong><br/>
 https://tablericons.com/<br/>
@@ -40,6 +41,7 @@ https://land-book.com/<br/>
 https://www.pxfuel.com/<br/>
 https://unsplash.com/<br/>
 https://burst.shopify.com/<br/>
+https://freephotos.cc/en<br/>
 
 <strong>Online Photo Editor</strong><br/>
 https://www.photopea.com/<br/>
