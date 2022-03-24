@@ -26,7 +26,6 @@ https://www.cleanpng.com/<br/>
 https://favpng.com/<br/>
 https://pngimg.com/<br/>
 
-
 <strong>Illustrations (Icons, Character, Object & Background)</strong><br/>
 https://undraw.co/illustrations<br/>
 https://themeisle.com/illustrations/<br/>
@@ -35,15 +34,15 @@ https://www.manypixels.co/gallery<br/>
 https://www.vecteezy.com/<br/>
 https://iconscout.com/<br/>
 
-<strong>Website Inspiration</strong><br/>
-http://cssnectar.com/<br/>
-https://land-book.com/<br/>
-
 <strong>Royalty Free Images</strong><br/>
 https://www.pxfuel.com/<br/>
 https://unsplash.com/<br/>
 https://burst.shopify.com/<br/>
 https://freephotos.cc/en<br/>
+
+<strong>Website Inspiration</strong><br/>
+http://cssnectar.com/<br/>
+https://land-book.com/<br/>
 
 <strong>Download free Website Templates (HTML, css)</strong><br/>
 https://www.free-css.com/free-css-templates/<br/>
