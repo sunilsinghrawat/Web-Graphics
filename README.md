@@ -34,20 +34,21 @@ https://www.manypixels.co/gallery<br/>
 https://www.vecteezy.com/<br/>
 https://iconscout.com/<br/>
 
+<strong>Download free Website Templates (HTML, css)</strong><br/>
+https://www.free-css.com/free-css-templates/<br/>
+https://bootstrapmade.com/free-website-templates/<br/>
+https://templatemo.com/<br/>
+
 <strong>Royalty Free Images</strong><br/>
 https://www.pxfuel.com/<br/>
 https://unsplash.com/<br/>
 https://burst.shopify.com/<br/>
 https://freephotos.cc/en<br/>
 
-<strong>Website Inspiration</strong><br/>
+<strong>Website/App Design Inspiration</strong><br/>
 http://cssnectar.com/<br/>
 https://land-book.com/<br/>
-
-<strong>Download free Website Templates (HTML, css)</strong><br/>
-https://www.free-css.com/free-css-templates/<br/>
-https://bootstrapmade.com/free-website-templates/<br/>
-https://templatemo.com/<br/>
+https://screenlane.com/<br/>
 
 <strong>Download free Website Mockup/Background(PSD)</strong><br/>
 https://html.design/<br/>
