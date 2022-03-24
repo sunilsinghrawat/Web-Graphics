@@ -66,3 +66,5 @@ https://html.design/<br/>
 
 <strong>Download free VideoClip</strong><br/>
 https://dronestock.com/<br/>
+https://coverr.co/<br/>
+https://mixkit.co/<br/>
