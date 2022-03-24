@@ -45,14 +45,16 @@ https://unsplash.com/<br/>
 https://burst.shopify.com/<br/>
 https://freephotos.cc/en<br/>
 
-<strong>Website/App Design Inspiration</strong><br/>
-http://cssnectar.com/<br/>
-https://land-book.com/<br/>
-https://screenlane.com/<br/>
 
 <strong>Download free Website Mockup/Background(PSD)</strong><br/>
 https://html.design/<br/>
 https://freedesignfile.com/<br/>
+
+<strong>Website/App Design Inspiration</strong><br/>
+http://cssnectar.com/<br/>
+https://land-book.com/<br/>
+https://screenlane.com/<br/>
+https://collectui.com/<br/>
 
 <strong>Download free VideoClip</strong><br/>
 https://dronestock.com/<br/>
