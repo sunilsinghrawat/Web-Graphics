@@ -26,12 +26,14 @@ https://www.cleanpng.com/<br/>
 https://favpng.com/<br/>
 https://pngimg.com/<br/>
 
-<strong>compress jpeg/png file</strong><br/>
-https://tinypng.com/<br/>
 
-<strong>Remove Image/video Background</strong><br/>
-https://www.remove.bg/<br/>
-https://www.unscreen.com/<br/>
+<strong>Illustrations (Icons, Character, Object & Background)</strong><br/>
+https://undraw.co/illustrations<br/>
+https://themeisle.com/illustrations/<br/>
+https://iradesign.io/gallery/illustrations<br/>
+https://www.manypixels.co/gallery<br/>
+https://www.vecteezy.com/<br/>
+https://iconscout.com/<br/>
 
 <strong>Website Inspiration</strong><br/>
 http://cssnectar.com/<br/>
@@ -42,21 +44,6 @@ https://www.pxfuel.com/<br/>
 https://unsplash.com/<br/>
 https://burst.shopify.com/<br/>
 https://freephotos.cc/en<br/>
-
-<strong>Online Photo Editor</strong><br/>
-https://www.photopea.com/<br/>
-https://pixlr.com/<br/>
-
-<strong>Illustrations (Icons, Character, Object & Background)</strong><br/>
-https://undraw.co/illustrations<br/>
-https://themeisle.com/illustrations/<br/>
-https://iradesign.io/gallery/illustrations<br/>
-https://www.manypixels.co/gallery<br/>
-https://www.vecteezy.com/<br/>
-https://iconscout.com/<br/>
-
-<strong>Wavy SVG Background</strong><br/>
-https://getwaves.io/<br/>
 
 <strong>Download free Website Templates (HTML, css)</strong><br/>
 https://www.free-css.com/free-css-templates/<br/>
@@ -71,3 +58,17 @@ https://freedesignfile.com/<br/>
 https://dronestock.com/<br/>
 https://coverr.co/<br/>
 https://mixkit.co/<br/>
+
+<strong>Online Photo Editor</strong><br/>
+https://www.photopea.com/<br/>
+https://pixlr.com/<br/>
+
+<strong>Wavy SVG Background</strong><br/>
+https://getwaves.io/<br/>
+
+<strong>compress jpeg/png file</strong><br/>
+https://tinypng.com/<br/>
+
+<strong>Remove Image/video Background</strong><br/>
+https://www.remove.bg/<br/>
+https://www.unscreen.com/<br/>
