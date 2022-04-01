@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>create div and list with Javascript</title>
+<style>
+	.newDiv{border:1px solid #ccc;padding:20px;}
+</style>
+</head>
+<body>
+
+<h6>This is heading</h6>
+<div class="divID" id="divID">
+	
+</div>
+
+<script>
+	
+	//var newDiv = "<div class='newDiv'><ul><li>One</li><li>Two</li></ul></div>"
+	var newDiv = "<div class='newDiv'>";
+	newDiv += '<ul><li>One</li><li>Two</li></ul>'
+	newDiv +="</div>"
+	var divVar = document.getElementsByTagName("div")[0].innerHTML = newDiv;
+	
+
+</script>
+</body>
+</html>
