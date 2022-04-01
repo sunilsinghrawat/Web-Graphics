@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Element and data inject with Js (Array)</title>
+</head>
+<body>
+
+<div id="menuWrapper">
+</div>
+
+<script>
+
+var menuList = '<div class="dropdown-items">';
+
+var menuItems = [
+	['/link','Click Me'],
+	['/link-second','Check Now'],
+	['/link-third','Hit Me'],
+	['/multiple-link','Check Now'],
+	['/Game','Sport']
+];
+
+for(i=0; i<menuItems.length; i++){
+	menuList += '<a href="'+ menuItems[i][0] +'" title="'+  menuItems[i][1] +'">'+  menuItems[i][1] +'</a>'+'<br/>';	
+}			
+
+menuList += '</div>';
+document.getElementById('menuWrapper').innerHTML = menuList;
+
+</script>
+
+
+</body>
+</html>
