@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image SRC change with data-src after 5 second</title>
+<style>
+img{width:100%;max-width:300px;}
+</style>
+</head>
+<body>
+<img class="imgTag" src="https://placeimg.com/100/100/arch" data-src="https://placeimg.com/640/480/arch" />
+<img class="imgTag" src="https://placeimg.com/100/100/tech" data-src="https://placeimg.com/640/480/tech" />
+<img class="imgTag" src="https://placeimg.com/100/100/nature" data-src="https://placeimg.com/640/480/nature" />
+
+<script>
+
+setTimeout(laodImg, 5000);
+var imgL = document.getElementsByTagName("img");
+
+function laodImg(){
+	for(i=0;i<imgL.length;i++)
+	{
+		imgL[i].src =  imgL[i].getAttribute('data-src');
+	}
+}
+
+</script>
+</body>
+</html>
