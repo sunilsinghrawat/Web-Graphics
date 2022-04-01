@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click change div position and reduce size</title>
+<style>
+.shape{width:100px;height:100px;background:#ccc; position:absolute;}
+body{padding:0px;margin:0px;}
+</style>
+</head>
+<body>
+
+<div class="shape" id="shape" onclick="change()"></div>
+<script>
+var i = 1;
+
+var shp = document.getElementById("shape");
+var shapes = shp.clientWidth;
+
+var screenWidth = window.innerWidth;
+var screenHeight = window.innerHeight;
+
+function change(){
+
+let randomWidth = Math.floor((Math.random() * 1000) + 1);
+let randomHeight = Math.floor((Math.random() * 1000) + 1);
+
+if(randomHeight > screenHeight) {
+randomHeight = screenHeight - Math.floor((Math.random() * 200) + 1);;
+}
+
+if(randomWidth > screenWidth) {
+randomWidth = screenWidth - Math.floor((Math.random() * 200) + 1);
+}
+
+
+let x = randomWidth;
+let y = randomHeight;
+
+	shp.style.width = shp.style.height = (shapes - i++ *10)+"px";
+
+	shp.style.top = x+"px";
+	shp.style.left = y+"px";
+	
+	if(shp.clientWidth==10)
+	{
+		shp.style.width = shp.style.height = "100px";
+		i=1;
+	}
+}
+
+</script>
+</body>
+</html>
