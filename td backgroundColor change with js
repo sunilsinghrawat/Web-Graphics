@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>td backgroundColor change with js</title>
+</head>
+<body>
+
+<table>
+<tr>
+	<td style="background-color:#ccc">one</td>
+    <td>two</td>
+    <td>two</td>
+    <td>two</td>
+</tr>
+
+<tr>
+	<td style="background-color:#ccc">one</td>
+    <td>two</td>
+    <td>twoo</td>
+    <td>two</td>
+</tr>
+
+</table>
+<script>
+
+var tdbg = document.getElementsByTagName("td")
+
+for(i=0;i<tdbg.length;i++)
+{
+tdbg[i].style.backgroundColor = "#ccc";
+}
+</script>
+</body>
+</html>
