@@ -25,7 +25,7 @@ function shapeChange(){
 }
 
 function sqre(){
-	shpChg.style.background="#ccc";
+    shpChg.style.background="#ccc";
     shpChg.style.borderRadius="0px"
 }
 </script>
