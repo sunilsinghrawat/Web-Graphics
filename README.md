@@ -53,8 +53,11 @@ https://freedesignfile.com/<br/>
 <strong>Website/App Design Inspiration</strong><br/>
 http://cssnectar.com/<br/>
 https://land-book.com/<br/>
-https://screenlane.com/<br/>
 https://collectui.com/<br/>
+https://screenlane.com/<br/>
+
+<strong>Poster/Banner Design</strong><br/>
+https://www.postermywall.com/<br/>
 
 <strong>Download free VideoClip</strong><br/>
 https://dronestock.com/<br/>
