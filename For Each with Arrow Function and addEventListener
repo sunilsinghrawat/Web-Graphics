@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click with the help of JS (For Each with Arrow Function and addEventListener)</title>
+	<style>
+		body{margin:0px;padding:0px;}
+		.filter-options-title{border-bottom:1px solid #f2f2f2;background:#f2f2f2;padding:10px;}
+		.filter-options-content{margin-bottom:20px;padding:10px;padding-bottom:0px; }
+	</style>
+</head>
+<body>
+
+<div class="filter-options-title">First Click me</div>
+<div class="filter-options-content">first content</div>
+
+<div class="filter-options-title">2 Click me</div>
+<div class="filter-options-content">2 content</div>
+
+<div class="filter-options-title">3 Click me</div>
+<div class="filter-options-content">3 content</div>
+
+<div class="filter-options-title">4 Click me</div>
+<div class="filter-options-content">4 content</div>
+
+<div class="filter-options-title">5 Click me</div>
+<div class="filter-options-content">5 content</div>
+
+
+
+<script>
+
+
+const boxes = document.querySelectorAll('.filter-options-title');
+boxes.forEach(box => {
+	box.addEventListener('click', function handleClick(event) {
+	
+		box.setAttribute('style', 'background-color: #999;');
+		this.style.fontWeight="bold";
+		this.classList.add("hi");
+		
+	});
+});
+
+</script>
+
+</body>
+</html>
