@@ -1,0 +1,7 @@
+$(document).ready(function(){
+    $("#pastEventsLink").on('click', function() {
+      $("html, body").animate({
+        scrollTop: ($('#pastEvents').offset().top - 10) + 'px'
+      }, 1000);
+    });
+});
