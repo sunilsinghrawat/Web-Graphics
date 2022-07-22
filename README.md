@@ -57,6 +57,7 @@ https://collectui.com/<br/>
 https://screenlane.com/<br/>
 
 <strong>Poster/Banner Design</strong><br/>
+https://pixelied.com/<br/>
 https://www.postermywall.com/<br/>
 https://www.canva.com/<br/>
 
