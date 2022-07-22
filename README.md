@@ -58,6 +58,7 @@ https://screenlane.com/<br/>
 
 <strong>Poster/Banner Design</strong><br/>
 https://www.postermywall.com/<br/>
+https://www.canva.com/<br/>
 
 <strong>Download free VideoClip</strong><br/>
 https://dronestock.com/<br/>
