@@ -5,3 +5,11 @@ $(document).ready(function(){
       }, 1000);
     });
 });
+======================
+======================
+$(".knowMoreBtn").click(function() {
+	var dest = $('#knowMoreRedirect').offset().top - 60;
+	$('html,body').animate({
+	scrollTop: dest
+	}, 1500, 'swing');
+}); 
