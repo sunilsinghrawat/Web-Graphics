@@ -7,8 +7,8 @@ $(document).ready(function(){
 });
 ======================
 ======================
-$(".knowMoreBtn").click(function() {
-	var dest = $('#knowMoreRedirect').offset().top - 60;
+$(".clickBtn").click(function() {
+	var dest = $('#redirectSection').offset().top - 60;
 	$('html,body').animate({
 	scrollTop: dest
 	}, 1500, 'swing');
