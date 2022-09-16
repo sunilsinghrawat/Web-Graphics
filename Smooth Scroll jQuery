@@ -17,9 +17,25 @@ $(".clickBtn").click(function() {
 =============smooth scroll to particular section on page load===========
 ========================================================================
 jQuery('html, body').animate({
-   'scrollTop' : jQuery("#gphgSchedule").position().top-100
+   'scrollTop' : jQuery("#").position().top-100
 });
 
 jQuery('html,body').animate({
-    scrollTop: jQuery('#gphgSchedule').offset().top-100
+    scrollTop: jQuery('#').offset().top-100
 }, 1000);
+
+================================================
+different scroll position for mobile and desktop
+================================================
+var mediaScroll = 60;
+var forMobile = window.matchMedia("(max-width:767px)");
+if(forMobile.matches){
+	mediaScroll = 50;
+}
+
+$(".knowMoreBtn").click(function() {
+	var dest = $('#redirectSection').offset().top - mediaScroll;
+	$('html,body').animate({
+	scrollTop: dest
+	}, 500);
+}); 
