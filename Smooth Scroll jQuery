@@ -5,11 +5,21 @@ $(document).ready(function(){
       }, 1000);
     });
 });
-======================
-======================
+======================================================
+======================================================
 $(".clickBtn").click(function() {
 	var dest = $('#redirectSection').offset().top - 60;
 	$('html,body').animate({
 	scrollTop: dest
 	}, 1500, 'swing');
 }); 
+
+=============smooth scroll to particular section on page load===========
+========================================================================
+jQuery('html, body').animate({
+   'scrollTop' : jQuery("#gphgSchedule").position().top-100
+});
+
+jQuery('html,body').animate({
+    scrollTop: jQuery('#gphgSchedule').offset().top-100
+}, 1000);
