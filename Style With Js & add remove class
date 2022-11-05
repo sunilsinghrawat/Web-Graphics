@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Css Calling Multiple Way & Simple add/Remove Class with JS</title>
+
+<style>
+	.sideMenuWrap{margin-top:20px;}
+	.sideMenuWrap.open{
+		border:1px solid #f00;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="nav-item">
+	   <a class="nav-link active text-capitalize menuShow" href="#" onclick="addClass()">
+		addClass
+	   </a>
+	</div>
+
+	<div class="sideMenuWrap">
+		<div class="menuWrap">
+			<a href="javascript:void(0)" class="clsMenu" onclick="removeClass()">Remove Class</a>
+			<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+		</div>
+	</div>
+	
+	<p id="p1">Hello World!</p>
+	<p id="p2">Hello World!</p>
+
+<script>
+
+  function addClass() {
+    var menuCls = document.getElementsByClassName("sideMenuWrap")[0];
+    menuCls.classList.add("open");
+  }
+
+  function removeClass() {
+    var menuCls = document.getElementsByClassName("sideMenuWrap")[0];
+    menuCls.classList.remove("open");
+  }
+  
+  /*ways to add css with javscript */
+    document.getElementById("p2").style.fontSize = "10px";
+	document.getElementById("p2").style.cssText="border:1px solid #ccc;padding:5px;font-weight:bold;font-size:25px;"
+	document.getElementById("p2").setAttribute("style", "font-size: 100px; font-style: italic; color:#ff0000;");
+
+	let heading = "font-size:28px;color:#ccc;font-weight:bold;"
+	document.getElementById("p2").style = heading;
+
+</script>
+</body>
+</html>
