@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>css Slider on Click</title>
+    <style>
+      .clickSlider{display:flex;flex-wrap:wrap;justify-content:space-between;}
+      .sideBar{width:30%;}
+	  .link label{background:#f2f2f2;padding:10px 5px;margin-bottom:5px;cursor:pointer;display:inline-block;width:100%;}
+      .slideshow{width:65%;overflow:hidden;}
+      .slides{display:flex;width:1000%;height:100%;}
+      .slide {width:25%;transition: 0.8s;}
+      input[name="r"]{ position: absolute;visibility: hidden; }
+
+      #r1:checked ~ .s1{
+        margin-left: 0%;
+      }
+      #r2:checked ~ .s1{
+        margin-left: -25%;
+      }
+      #r3:checked ~ .s1{
+        margin-left: -50%;
+      }
+      #r4:checked ~ .s1{
+        margin-left: -75%;
+      }
+	.gray{color:#ccc;}
+
+    </style>
+  </head>
+  <body>
+	  <div class="clickSlider">
+	   
+		<div class="sideBar">
+		  <div class="link"><label for="r1">First</label> </div>
+		  <div class="link"><label for="r2">Second </label></div>
+		  <div class="link"><label for="r3">Third</label></div>
+		  <div class="link"><label for="r4">Fourth </label></div>
+		</div>
+
+		<div class="slideshow">
+		  <div class="slides">
+			<input type="radio" name="r" id="r1" checked="">
+			<input type="radio" name="r" id="r2">
+			<input type="radio" name="r" id="r3">
+			<input type="radio" name="r" id="r4">
+			
+			<div class="slide s1">The Quick brown Fox Jumps Over the Lazy dog, The Quick brown Fox Jumps Over the Lazy dog, The Quick brown Fox Jumps Over the Lazy dog, The Quick brown Fox Jumps Over the Lazy dog, The Quick brown Fox Jumps Over the Lazy dog, The Quick brown Fox Jumps Over the Lazy dog</div>
+			<div class="slide">Second BLock</div>
+			<div class="slide">Third BLock</div>
+			<div class="slide">Fourth BLock</div>
+
+		  </div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.link').click(function() {
+			$('.link').removeClass("gray");
+			$(this).addClass("gray");
+		}); 
+	})
+	</script>
+  </body>
+</html>
