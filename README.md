@@ -71,6 +71,7 @@ https://pixlr.com/<br/>
 
 <strong>Wavy SVG Background</strong><br/>
 https://getwaves.io/<br/>
+https://www.blobmaker.app/
 
 <strong>compress jpeg/png file</strong><br/>
 https://tinypng.com/<br/>
