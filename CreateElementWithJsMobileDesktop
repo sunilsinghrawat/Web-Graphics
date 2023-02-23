@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Element & Add in HTML file with JS for Mobile & Desktop different </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div>
+	<ul class="myList">
+		<li>First Static</li>
+		<li>Second Static</li>
+		<li>Third Static</li>
+		<li>Fourth Static</li>
+		<li>Fifth Static</li>
+		<li>Six Static</li>
+		<li>Seventh Static</li>
+	</ul>
+</div>
+
+<script>
+
+	const liEle = document.createElement("li");
+	liEle.setAttribute('class','newListElement');
+
+	const linkEle = document.createElement("a");
+	linkEle.setAttribute('href','javascript:void(0)');
+
+	const imgEle = document.createElement("img");
+	imgEle.setAttribute('src','https://');
+
+	const spanEle = document.createElement("span");
+	const spanNode =document.createTextNode("I am Dynamic span");
+		
+	spanEle.appendChild(spanNode);
+	liEle.appendChild(linkEle);
+	linkEle.appendChild(imgEle);
+	linkEle.appendChild(spanEle);
+
+	const myList = document.querySelector(".myList");
+	/*user navigator*/
+	const deviceSize = navigator.userAgent;
+	let regexp = /android|iphone|kindle|ipad/i;
+	let isMobile = regexp.test(deviceSize)
+	//myList.insertBefore(liEle,myList.children[4])
+	if (isMobile) 
+	{
+	  //imgEle.setAttribute('src','');
+	  myList.insertBefore(liEle,myList.children[2])
+	}
+	else
+	{
+	   // imgEle.setAttribute('src','');
+		myList.insertBefore(liEle,myList.children[5])
+	}
+
+
+</script>
+
+</body>
+</html>
