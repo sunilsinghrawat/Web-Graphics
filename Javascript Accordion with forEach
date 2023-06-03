@@ -33,17 +33,8 @@
 
 <script>
 
-var body = document.body;
-
-
 const boxes = document.getElementsByClassName('filter-options-title');
-				   
 let headersArr = Array.from(boxes);
-					   
-
-const boxesEle = document.getElementsByClassName('filter-options-content');
-let boxEle = Array.from(boxesEle);
-
 
 headersArr.forEach(box => {
 	box.addEventListener('click', function(event) {
@@ -58,6 +49,12 @@ headersArr.forEach(box => {
         
 	});
 });
+
+///below code for click body remove class but not on same object
+
+var body = document.body;
+const boxesEle = document.getElementsByClassName('filter-options-content');
+let boxEle = Array.from(boxesEle);
 
 boxEle.forEach(ind=>{
 	ind.addEventListener("click",()=>{
