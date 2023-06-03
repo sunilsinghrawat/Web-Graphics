@@ -3,14 +3,16 @@
 <head>
 	<title>Click with the help of JS (For Each with Arrow Function and addEventListener)</title>
 	<style>
-		body{margin:0px;padding:0px;}
-        .hi{border:1px solid #f00;}
+		body{margin:0px;padding:0px;height:100vh;}
+        .menuShow{border:1px solid #000;background:#333!important;color:#fff;}
 		.filter-options-title{border-bottom:1px solid #f2f2f2;background:#f2f2f2;padding:10px;}
-		.filter-options-content{margin-bottom:20px;padding:10px;padding-bottom:0px; opacity:0;visibility:hidden;height:0px;transition:.5s all;}
-        .filter-options-title.hi + .filter-options-content{visibility:visible;opacity:1;height:auto;}
+		.filter-options-content{padding:10px;padding-bottom:20px; opacity:0;visibility:hidden;height:0px;transition:.5s all;}
+        .filter-options-title.menuShow + .filter-options-content{visibility:visible;opacity:1;height:auto;}
 	</style>
 </head>
 <body>
+
+<div style="border:1px solid #000;">
 
 <div class="filter-options-title">First Click me</div>
 <div class="filter-options-content">first content</div>
@@ -27,28 +29,49 @@
 <div class="filter-options-title">5 Click me</div>
 <div class="filter-options-content">5 content</div>
 
-
+</div>
 
 <script>
 
+var body = document.body;
+
 
 const boxes = document.getElementsByClassName('filter-options-title');
-console.log(boxes);
+				   
 let headersArr = Array.from(boxes);
-console.log(headersArr)
+					   
+
+const boxesEle = document.getElementsByClassName('filter-options-content');
+let boxEle = Array.from(boxesEle);
+
 
 headersArr.forEach(box => {
-	box.addEventListener('click', function() {
+	box.addEventListener('click', function(event) {
     
-		this.classList.toggle("hi");
+		this.classList.toggle("menuShow");
+		event.stopPropagation()
         headersArr.forEach(otherbox =>{
 			if(otherbox!= this){
-				otherbox.classList.remove("hi");
+				otherbox.classList.remove("menuShow");
             }
 		})
         
 	});
 });
+
+boxEle.forEach(ind=>{
+	ind.addEventListener("click",()=>{
+		event.stopPropagation();
+	})
+
+})
+
+body.addEventListener("click",function(){
+	headersArr.forEach((el)=>{
+		el.classList.remove("menuShow");
+	})
+	
+})
 
 </script>
 
