@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove p element to see the changes</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    
+    <style type="text/css">
+	</style>
+  </head>
+  <body>
+
+<div class="ct-bnr-content">
+	<h4 class="mb-8">Lorem Ipsum Dolor</h4>
+	<p>Remove me to see the difference</p>
+</div>
+
+<script>
+	var bnrWrap = document.querySelector(".ct-bnr-content");
+
+	if(bnrWrap.childElementCount === 1){
+		//get the element
+		var str = document.querySelector(".ct-bnr-content h4");
+		
+		//convert the value into text
+		var textCont = str.textContent;
+		
+		// convert the text into string with split method
+		var words = textCont.split(' ');
+		
+		// add the br tag after after 1 index
+		var wordsBr = words.splice(1,0,"<br>");
+		
+		//join() method returns an array as a string
+		str.innerHTML = words.join(' ');
+
+	}
+
+
+
+	//var wordCount = words.length;
+
+	/*
+	var lineBreak = document.createElement('br');
+	str.appendChild(lineBreak);
+	console.log(str.innerHTML)
+
+
+
+	var lineBreak = document.createElement('br');
+	var apnd = appendChild(lineBreak);
+	console.log(words[0].apnd);
+	*/
+
+	//console.log(words[0]);
+	//console.log(lineBreak)
+	//var inrTxt = str.innerText;
+	//console.log("Text content "+ textCont);
+	//console.log("Inner Text " + inrTxt);
+
+	//console.log(wordCount)
+
+</script>
+
+	</body>
+</html>
