@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Span dynamic with Js in Static render content</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <style type="text/css">
+		
+		.mainWrap{border:1px solid #ccc;max-width:400px;padding:15px;}
+		.mainWrap span{display:block;}
+		
+	</style>
+  </head>
+  <body>
+ 
+		<div class="mainWrap"> 
+			<h4>Lorem Ipsum Dolor</h4>
+			<p>Sub Heading</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		</div>
+		
+		<script>
+		
+			var bnrCont = document.querySelector(".mainWrap h4")
+			var textCont = bnrCont.textContent;
+			var words = textCont.split(" ");
+			words.splice(2,0,"<span>");
+			words.splice(4,0,"</span>");
+			bnrCont.innerHTML = words.join(' ');
+			console.log(words);
+			console.log(bnrCont);
+		
+		</script>
+		
+	</body>
+</html>
