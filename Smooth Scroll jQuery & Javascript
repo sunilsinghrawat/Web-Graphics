@@ -1,3 +1,9 @@
+var backTop = document.querySelector(".element")
+backTop.addEventListener("click",()=>{
+	window.scroll({top: 0, behavior: "smooth"})
+})
+======================================================
+======================================================
 $(document).ready(function(){
     $("#pastEventsLink").on('click', function() {
       $("html, body").animate({
