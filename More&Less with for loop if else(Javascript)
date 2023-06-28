@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> See More Less with for loop if else(Javascript) </title>
+<style>
+
+
+.fullWrap{border:1px solid #ccc;padding:10px;margin-top:20px;}
+.hideWrap{display:none;}
+.rdMoreLess{cursor:pointer;font-size:12px;color:#999;font-family:arial;}
+.read-more .hideWrap{display:block;}
+
+</style>
+</head>
+<body>
+
+	<div class="fullWrap">
+		<div class="half">
+			<p><strong>First :</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			<p><strong>Second : </strong> Lorem Ipsum is simply</p>
+			<p><strong>Second : </strong> </p>
+		</div>
+		<div class="full hideWrap">
+			<p><strong>Third : </strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		</div>
+		<p><span class="rdMoreLess">Read More</span></p>
+	</div>
+	
+	
+	<div class="fullWrap">
+		<div class="half">
+			<p><strong>First :</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p><strong>Second : </strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="full hideWrap">
+			<p><strong>Third : </strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		</div>
+		<p><span class="rdMoreLess">Read More</span></p>
+	</div>
+	
+	<div class="fullWrap">
+		<div class="half">
+			<p><strong>Fourth Next Wrap :</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="full hideWrap">
+			<p><strong>Fifth Next Wrap : </strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		</div>
+		<span class="rdMoreLess">Read More</span>
+	</div>
+
+	<script>	
+		
+		var rm = document.getElementsByClassName("rdMoreLess");
+
+		for(let i=0;i < rm.length;i++){
+		
+			rm[i].addEventListener("click",()=>{
+			
+				var parentWrap = rm[i].closest(".fullWrap")
+				if(parentWrap.classList.contains("read-more")){
+					parentWrap.classList.remove("read-more");
+					rm[i].innerHTML = "Read More";
+				}
+				else{
+					parentWrap.classList.add("read-more");
+					rm[i].innerHTML = "Read Less";
+				}
+				
+				/*
+				if(rm[i].parentNode.classList.contains("read-more")){
+					rm[i].parentNode.classList.remove("read-more");
+					rm[i].innerHTML = "Read More";
+				}
+				else{
+					rm[i].parentNode.classList.add("read-more");
+					rm[i].innerHTML = "Read Less";
+				}
+				*/
+				
+			});
+			
+		}
+
+	</script>
+
+</body>
+</html>
