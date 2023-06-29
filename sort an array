@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sort array</title>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<script>
+
+	var str = ["biscuit","Fruits","Vegetables","household","aaa"];
+	console.log(str.sort())
+	var newAr = str.join(" ");
+	//console.log("NewAr : "+newAr);
+	var lcase = newAr.toLowerCase();
+	//console.log("lowerCase : " + lcase);
+	var splt = lcase.split(' ');
+	//console.log(splt);
+	var caseChange = splt.sort();
+	console.log(caseChange);
+	
+	console.log("=======================")
+	
+	var one = ["ee","dd","aa","b","c"]
+	console.log(one.sort())
+	
+	console.log("=======================localeCompare method below")
+	
+	var two = ["ee","Ad","aa","bB","Cc"]
+	two.sort(function(a, b) {
+	  //  return a.toLowerCase().localeCompare(b.toLowerCase());
+		  return a.localeCompare(b);
+	});
+	console.log(two);
+	
+	
+</script>
+
+</body>
+</html>
