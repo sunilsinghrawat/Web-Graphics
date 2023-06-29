@@ -14,12 +14,13 @@
 	var str = ["biscuit","Fruits","Vegetables","household","aaa"];
 	console.log(str.sort())
 	var newAr = str.join(" ");
-	//console.log("NewAr : "+newAr);
+	//join method to convert array in string
 	var lcase = newAr.toLowerCase();
-	//console.log("lowerCase : " + lcase);
+	//convert to lowercase;
 	var splt = lcase.split(' ');
-	//console.log(splt);
+	//split method to convert string to array
 	var caseChange = splt.sort();
+	// sort method to sorting array
 	console.log(caseChange);
 	
 	console.log("=======================")
@@ -27,7 +28,7 @@
 	var one = ["ee","dd","aa","b","c"]
 	console.log(one.sort())
 	
-	console.log("=======================localeCompare method below")
+	console.log("=======================localeCompare method below========================")
 	
 	var two = ["ee","Ad","aa","bB","Cc"]
 	two.sort(function(a, b) {
