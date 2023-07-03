@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Show More Less with If Else condition</title>
+	<meta name="description" content="description"/>
+	<meta name="author" content="author" />
+	<meta name="keywords" content="keywords" />
+
+	<style type="text/css">
+		.mainWrap{width:30%;display:inline-block;}
+		.mainWrap.clicked .test{font-weight:bold;padding:5px;}
+	</style>
+	</head>
+	<body>
+		
+		<div class="mainWrap">
+			<div class="test head">one</div>
+			<div class="test">Two</div>
+			<a href="javascript:void(0)" class="showMoreBtn"> Show More </a>
+		</div>
+		
+		<div class="mainWrap">
+			<div class="test">one</div>
+			<div class="test">Two</div>
+			<a href="javascript:void(0)" class="showMoreBtn"> Show More </a>
+		</div>
+
+		<div class="mainWrap">
+			<div class="test">one</div>
+			<div class="test">Two</div>
+			<a href="javascript:void(0)" class="showMoreBtn">Show More</a>
+		</div>
+		
+		<script>
+		
+			var showBtns = document.querySelectorAll(".showMoreBtn");
+			var mainWrap = document.querySelectorAll(".mainWrap");
+			
+			for(let i=0;i<showBtns.length;i++){
+			
+				showBtns[i].addEventListener("click",()=>{
+				
+					if(mainWrap[i].classList.contains("clicked")){
+						mainWrap[i].classList.remove("clicked");
+						showBtns[i].innerHTML = "Show More"
+					}
+					
+					else{
+						mainWrap[i].classList.add("clicked");
+						showBtns[i].innerHTML = "Show Less"
+					}
+					
+				})
+				
+				/*
+				showBtns[i].addEventListener("click",()=>{
+					for(let j=0;j<mainWrap.length;j++){
+						mainWrap[i].classList.add("clicked");
+					}
+				})
+				*/
+			}
+			
+		</script>
+		
+	</body>
+</html>
+
