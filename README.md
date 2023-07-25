@@ -34,10 +34,11 @@ https://www.manypixels.co/gallery<br/>
 https://www.vecteezy.com/<br/>
 https://iconscout.com/<br/>
 
-<strong>Download free Website Templates (HTML, css)</strong><br/>
+<strong>Download free Website Templates (HTML, css)/Element</strong><br/>
 https://www.free-css.com/free-css-templates/<br/>
 https://bootstrapmade.com/free-website-templates/<br/>
 https://templatemo.com/<br/>
+https://uiverse.io/
 
 <strong>Download free Website Mockup/Background(PSD)</strong><br/>
 https://html.design/<br/>
