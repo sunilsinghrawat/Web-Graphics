@@ -69,9 +69,10 @@ https://mixkit.co/<br/>
 https://www.photopea.com/<br/>
 https://pixlr.com/<br/>
 
-<strong>Wavy SVG Background</strong><br/>
+<strong>Wavy/Normal SVG Background</strong><br/>
 https://getwaves.io/<br/>
 https://www.blobmaker.app/
+https://bgjar.com/
 
 <strong>compress jpeg/png file</strong><br/>
 https://tinypng.com/<br/>
