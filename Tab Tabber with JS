@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabber with JS</title>
+<style>
+.tabs a{display:inline-block;padding:5px;}
+.tabs a.active{text-decoration:none;color:#999;}
+	.tabcontent{padding:10px;display:inline-block;border:1px solid #ccc;display:none;}
+    .tabcontent.active{display:inline-block;}
+</style>
+</head>
+<body>
+<div class="tabber-wrap">
+  <div class="tabs">
+    <a href="javascript:void(0)" class="tablinks active" data-id="one">First</a>
+    <a href="javascript:void(0)" class="tablinks" data-id="two">Second</a>
+  </div>
+ 
+ <div class="tab-cont-wrap">
+	 <div id="one" class="tabcontent active">
+ 			First Block
+  	 </div>
+   
+   	<div id="two" class="tabcontent">
+    	Second Block
+    </div>
+</div>
+</div>
+<script>
+			const tabs = document.querySelector(".tabber-wrap");
+			const tabButton = document.querySelectorAll(".tablinks");
+			const contents = document.querySelectorAll(".tabcontent");
+
+			tabs.onclick = e => {
+				const id = e.target.dataset.id;
+				if (id) {
+					tabButton.forEach(btn => {
+						btn.classList.remove("active");
+					});
+					e.target.classList.add("active");
+
+					contents.forEach(content => {
+						content.classList.remove("active");
+					});
+					const element = document.getElementById(id);
+					element.classList.add("active");
+				}
+			}
+</script>
+</body>
+</html>
