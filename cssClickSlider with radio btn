@@ -6,9 +6,9 @@
       .clickSlider{display:flex;flex-wrap:wrap;justify-content:space-between;}
       .sideBar{width:30%;}
 	  .link label{background:#f2f2f2;padding:10px 5px;margin-bottom:5px;cursor:pointer;display:inline-block;width:100%;}
-      .slideshow{width:65%;overflow:hidden;}
-      .slides{display:flex;width:1000%;height:100%;}
-      .slide {width:25%;transition: 0.8s;}
+      .slideshow{width:65%;overflow:hidden;border:1px solid #ccc;}
+      .slides{display:flex;width:400%;height:100%;}
+      .slide {width:25%;transition: 0.8s;padding:10px;box-sizing:border-box;background:#f2f2f2;}
       input[name="r"]{ position: absolute;visibility: hidden; }
 
       #r1:checked ~ .s1{
