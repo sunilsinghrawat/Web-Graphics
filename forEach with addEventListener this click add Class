@@ -40,6 +40,32 @@ boxes.forEach(box => {
 		
 	});
 });
+// below comment code for if we remove class & style on other click or click on same element.
+/*boxes.forEach(box => {
+	box.addEventListener('click', function() {
+    	//below comment for remove style in other element when click on same
+          boxes.forEach(otherBox => {
+              if (otherBox !== this) {
+                  otherBox.removeAttribute('style');
+                  otherBox.style.fontWeight = 'normal';
+                  otherBox.classList.remove("hi");
+              }
+          });
+
+		if(this.classList.contains("hi")){
+        	box.removeAttribute('style', 'background-color: #999;');
+			this.style.fontWeight="normal";
+			this.classList.remove("hi");
+		}
+        else{
+			box.setAttribute('style', 'background-color: #999;');
+			this.style.fontWeight="bold";
+			this.classList.add("hi");
+		}
+		
+	});
+});
+*/
 
 </script>
 
