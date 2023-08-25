@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+    <style type="text/css">
+		.p-list{border:1px solid #ccc;padding:10px;margin-top:20px;}
+		.readMore{border:1px solid #333;position:relative;}
+		.readMore p:nth-of-type(n+3) {display:none;}
+		.txt-action-btn{display:none;margin-top:10px;}
+	</style>
+  </head>
+  <body>
+
+
+<div id="buttonsContainer"></div>
+
+<div class="break-me">
+	Break me into parts
+</div>
+
+<div class="p-list-wrap">
+	<div class="p-list">
+		<h2>This is heading <span>span - 1</span></h2>
+		<p><span>1. </span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+		
+		<p><span>2. </span> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+		
+		<p><span>3. </span> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, </p>
+		
+		<p><span>4. </span> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+		
+		<p><span>5. </span> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+		
+		<p><span>6. </span> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, </p>
+	</div>
+	<a href="javascript:void(0)" class="txt-action-btn">Read More</a>
+</div>
+
+<div class="p-list-wrap">
+	<div class="p-list">
+		<h2>Second Element <span>span - 2</span></h2>
+		<p><span>1. </span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+		
+		<p><span>2. </span> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+		
+		<p><span>3. </span> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, </p>
+		
+		<p><span>4. </span> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+		
+		<p><span>5. </span> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+		
+		<p><span>6. </span> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, </p>
+	</div>
+	<a href="javascript:void(0)" class="txt-action-btn">Read More</a>
+</div>
+
+<div class="p-list-wrap">
+	<div class="p-list">
+		<h2>This is heading<span>span - 3</span></h2>
+		<p><span>1. </span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+			
+		<p><span>2. </span> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, </p>
+	</div>
+	<a href="javascript:void(0)" class="txt-action-btn">Read More</a>
+</div>
+
+<script>
+
+let plist = document.querySelectorAll(".p-list");
+let actbtn = document.querySelectorAll(".txt-action-btn");
+
+plist.forEach((ele)=>{
+	
+	if(ele.childElementCount > 3){
+		ele.classList.add("readMore");
+		
+		 actbtn.forEach((btn) => {
+		 
+			 if(btn.previousElementSibling.childElementCount > 3){
+				btn.style.cssText="display:inline-block;border:1px solid #ccc;text-decoration:none;padding:5px;";
+				//btn.style.display="block";
+			 }
+			
+		 });
+		 
+	} else {
+		ele.classList.add("hi");
+	}
+	
+});
+
+/////////////////////////////////
+//below code split div element into span
+
+let emptyBox = "";
+document.querySelector(".break-me").textContent.split(" ").forEach(function(chk){
+	emptyBox += `<span> ${chk} - </span>`;
+	document.querySelector(".break-me").innerHTML = emptyBox;
+});
+
+/*below conte for createElement with js and on click print the same value */
+const buttonsContainer = document.getElementById("buttonsContainer");
+
+for (var i = 0; i < 5; i++) {
+  var button = document.createElement("a");
+  button.href="javascript:void(0)"
+  button.innerText = i;
+  
+  (function(index){
+    button.addEventListener("click", function() {
+      console.log(index);
+    })
+  })(i)
+  
+  buttonsContainer.appendChild(button);
+
+}
+
+</script>
+  </body>
+</html>
