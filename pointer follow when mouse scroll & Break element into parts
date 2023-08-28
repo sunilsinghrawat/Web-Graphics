@@ -9,9 +9,10 @@ body{overflow:hidden;}
 </head>
 <body>
 <div class="point"></div>
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
 
+<div class="break-me">
+	 Break me into parts
+</div>
 
 <script>
 
@@ -20,7 +21,14 @@ body{overflow:hidden;}
       pointer.style.left = eve.pageX-5 + "px";
       pointer.style.top = eve.pageY-5 +"px";
   });
-  
+
+
+
+let emptyBox = "";
+document.querySelector(".break-me").textContent.split(" ").forEach(function(chk){
+	emptyBox += `<span> ${chk} - </span>`;
+	document.querySelector(".break-me").innerHTML = emptyBox;
+});
 </script>
 </body>
 </html>
