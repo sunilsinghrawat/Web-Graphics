@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body{overflow:hidden;}
+ .point{width:10px;height:10px;display:inline-block;position:absolute;background:#04aa6d;border-radius:100%;opacity:.8;}
+</style>
+</head>
+<body>
+<div class="point"></div>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<script>
+
+  var pointer = document.querySelector(".point");
+  document.addEventListener("mousemove",(eve)=>{
+      pointer.style.left = eve.pageX-5 + "px";
+      pointer.style.top = eve.pageY-5 +"px";
+  });
+  
+</script>
+</body>
+</html>
