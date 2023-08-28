@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello!</title>
+    <title>forEach Function</title>
     <meta name="description" content="description"/>
     <meta name="author" content="author" />
     <meta name="keywords" content="keywords" />
-    <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
     <style type="text/css">
 		.p-list{border:1px solid #ccc;padding:10px;margin-top:20px;}
 		.readMore{border:1px solid #333;position:relative;}
 		.readMore p:nth-of-type(n+3) {display:none;}
+		.readMore.showMore p:nth-of-type(n+3){display:block;}
 		.txt-action-btn{display:none;margin-top:10px;}
 	</style>
   </head>
@@ -72,27 +72,47 @@
 <script>
 
 let plist = document.querySelectorAll(".p-list");
-let actbtn = document.querySelectorAll(".txt-action-btn");
+var actbtn = document.querySelectorAll(".txt-action-btn");
 
 plist.forEach((ele)=>{
-	
 	if(ele.childElementCount > 3){
 		ele.classList.add("readMore");
-		
-		 actbtn.forEach((btn) => {
-		 
-			 if(btn.previousElementSibling.childElementCount > 3){
-				btn.style.cssText="display:inline-block;border:1px solid #ccc;text-decoration:none;padding:5px;";
-				//btn.style.display="block";
-			 }
-			
-		 });
 		 
 	} else {
-		ele.classList.add("hi");
+		ele.classList.add("lessElement");
 	}
 	
 });
+
+ actbtn.forEach((btn) => {
+	 
+		if(btn.previousElementSibling.childElementCount > 3){
+			btn.style.cssText="display:inline-block;border:1px solid #ccc;padding:5px;";
+			//btn.style.display="block";
+		}
+		else{
+			console.log("hi");
+		}
+		
+		btn.addEventListener("click",function(){
+			
+			if(btn.classList.contains("readLess"))
+			{
+				btn.innerHTML = "Read More";
+				btn.classList.remove("readLess");
+				btn.previousElementSibling.classList.remove("showMore");
+			}
+			
+			else{
+				btn.previousElementSibling.classList.add("showMore");
+				btn.innerHTML = "Read Less";
+				btn.classList.add("readLess");
+			}
+			
+		});
+	
+ });
+		 
 
 /////////////////////////////////
 //below code split div element into span
@@ -103,7 +123,8 @@ document.querySelector(".break-me").textContent.split(" ").forEach(function(chk)
 	document.querySelector(".break-me").innerHTML = emptyBox;
 });
 
-/*below conte for createElement with js and on click print the same value */
+/*below content for createElement with js and on click print the same value  with immediately invoked function expression (IIFE)*/
+
 const buttonsContainer = document.getElementById("buttonsContainer");
 
 for (var i = 0; i < 5; i++) {
