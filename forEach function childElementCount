@@ -102,9 +102,18 @@ plist.forEach((ele)=>{
 			}
 			
 			else{
-				btn.previousElementSibling.classList.add("showMore");
-				btn.innerHTML = "Read Less";
-				btn.classList.add("readLess");
+            
+            /*  actbtn.forEach((oBtn)=>{
+                if(oBtn !== btn){
+                  oBtn.innerHTML = "Read More";
+                  oBtn.classList.remove("readLess");
+                  oBtn.previousElementSibling.classList.remove("showMore");
+                }
+              });
+              */  
+              btn.previousElementSibling.classList.add("showMore");
+              btn.innerHTML = "Read Less";
+              btn.classList.add("readLess");
 			}
 			
 		});
