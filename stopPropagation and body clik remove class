@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Click Event</title>
+	<meta name="description" content="description"/>
+	<meta name="author" content="author" />
+	<meta name="keywords" content="keywords" />
+
+	<style type="text/css">
+	html,body{height:100%;}
+		.search-dr{background:#ccc;}
+		.search-wrap{display:none;background:#ccc;}
+		.srchActive{display:block;}
+	</style>
+	</head>
+	<body>
+		
+		<div class="list-section cmn-space">
+			<div class="st-container-root bg-none">
+			
+				<div class="searchBar">
+					<form class="search-dr" id="search-dr">
+						<input type="text" class="srch-field" id="srch-field" placeholder="click Me" onkeyup="srchFunction()" >
+					</form>
+					
+					<div class="search-wrap">
+						<div class="srchSpec-wrap">
+							<h2>I am visible</h2>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+		<script>
+		
+			let inputField = document.getElementById("srch-field");
+			let searchWrap = document.querySelector(".search-wrap");
+			
+			inputField.addEventListener("click",(eve)=>{
+				searchWrap.classList.add("srchActive");
+				eve.stopPropagation();
+			})
+			
+			searchWrap.addEventListener("click",(eve)=>{
+				eve.stopPropagation();
+			})
+			
+			document.body.addEventListener("click", ()=>{
+				if(searchWrap.classList.contains("srchActive")){
+					searchWrap.classList.remove("srchActive");
+				}
+			});
+		
+		</script>
+		
+	</body>
+</html>
+
