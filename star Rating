@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Star Rating</title>
+		<meta name="description" content="description"/>
+		<meta name="author" content="author" />
+		<meta name="keywords" content="keywords" />
+		<style type="text/css">
+			
+			.star-rating {
+			  display: flex !important;
+			  flex-direction: row-reverse;
+			  font-size:18px;
+			  width: 120px;
+			  justify-content: space-between;
+			  margin-right: auto;
+			}
+
+			.star-rating input {
+			  display: none !important;
+			}
+
+
+			.star-rating label {
+			  cursor: pointer;
+			  background: url(star.svg);
+			  width: 18px !important;
+			  height: 18px !important;
+			  background-repeat: no-repeat;
+			  background-size: 18px;
+			}
+
+			.star-rating :checked~label {
+			  background: url(star-color.svg);
+			  background-repeat: no-repeat;
+			  background-size: 18px;
+			}
+
+			.star-rating label:hover,
+			.star-rating label:hover~label {
+			  background: url(star-color.svg);
+			  background-repeat: no-repeat;
+			  background-size: 18px;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="star-rating" style="">
+			<input type="radio" id="5-stars" name="rating" value="5">
+			<label for="5-stars" class="star"> </label>
+			<input type="radio" id="4-stars" name="rating" value="4" checked="">
+			<label for="4-stars" class="star"> </label>
+			<input type="radio" id="3-stars" name="rating" value="3">
+			<label for="3-stars" class="star"> </label>
+			<input type="radio" id="2-stars" name="rating" value="2">
+			<label for="2-stars" class="star"> </label>
+			<input type="radio" id="1-star" name="rating" value="1">
+			<label for="1-star" class="star"> </label>
+		</div>
+	</body>
+</html>
