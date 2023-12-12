@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Accordion</title>
+	
+	<style>
+		.accordion-list{border-bottom:1px solid #E9E9E9;margin-bottom:20px;padding-left:40px;}
+		
+		.accordion-head{font-size:24px;position:relative;cursor:pointer;padding-bottom:20px;}
+		.accordion-head:after{content:"+";position:absolute;top:-2px;left:-35px;font-weight:normal;font-size:30px;}
+		.accordion-ans{font-size:16px;display:none;}
+		.accord-active + .accordion-ans{display:block;}
+		.accordion-head.accord-active:after{content:"-";position:absolute;left:-33px;}
+		
+		
+		.accordion-wrap-listing{margin-top:50px;}
+		.accordion-wrap-listing .accordion-list{border:1px solid #ccc;border-radius:20px;margin:0px;padding:0px;overflow:hidden;}
+		.accordion-wrap-listing .accordion-head{margin:0px;padding:15px;border:1px solid #ccc;border-radius:20px;margin-top:-1px;}
+		.accordion-wrap-listing .accordion-head:after {right: 15px;left: auto;content: "";width: 10px;height: 10px;border-bottom: 2px solid #000;border-right: 2px solid #000;top: 25px;transform: rotate(-45deg);transition:.15s all;}
+		.accordion-wrap-listing .accordion-head.accord-active:after {transform: rotate(45deg);}
+		.accordion-wrap-listing .accordion-ans ul{margin:0px;padding:0px;}
+		.accordion-wrap-listing .accordion-ans li{list-style:none;border-bottom:1px solid #CACACA59;padding:15px 10px;}
+		.accordion-wrap-listing .accordion-ans li:last-child{border:none;}
+		
+	</style>
+	
+  </head>
+  <body>
+  
+	  <div class="container">
+		<div class="row">
+			<div class="col-sm-12">	
+				<div class="accordion-wrap">
+					
+					<div class="accordion-list">
+						<h3 class="accordion-head">What is Lorem Ipsum?</h3>
+						<div class="accordion-ans">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+					</div>	
+					
+					<div class="accordion-list">
+						<h3 class="accordion-head">What is Lorem Ipsum?</h3>
+						<div class="accordion-ans">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+					</div>	
+		
+				</div>
+			</div>
+		</div>
+	  </div>
+	  
+	   <div class="container">
+		<div class="row">
+			<div class="col-sm-12">	
+				<div class="accordion-wrap-listing">
+					
+					<div class="accordion-list">
+						<h3 class="accordion-head">What is Lorem Ipsum?</h3>
+						<div class="accordion-ans">
+							<ul>
+								<li>What is Lorem Ipsum?</li>
+								<li>Where does it come from?</li>
+								<li>Why do we use it?</li>
+								<li>Where can I get some?</li>
+							</ul>
+						</div>
+					</div>	
+					
+				</div>
+			</div>
+		</div>
+	  </div>
+	  
+	
+	<script>
+
+		const accord = document.querySelectorAll('.accordion-head');
+		accord.forEach(acrdInr => {
+			acrdInr.addEventListener('click', function handleClick(event) {
+				this.classList.toggle("accord-active");
+			});
+		});
+		
+	</script>
+
+  </body>
+</html>
