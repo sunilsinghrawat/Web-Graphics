@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reached on Top add and remove class</title>
+<style>
+
+body{margin:0px;padding:0px;}
+#HeaderWrapper {background: lightgrey;height: 1500px;}
+.box {background: skyblue;width: 100%; height: 50px;}
+#Navigation {background: green;padding:10px;}
+.fixed_navbar {position: fixed; z-index: 1000;width: 100%;left: 0;top: 0;}
+.cmn-txt{padding:10px;}
+
+</style>
+</head>
+<body>
+
+<div id="HeaderWrapper">
+  <div class="box"></div>
+  <div id="Navigation">
+    Navigation
+  </div>
+  <div class="cmn-txt">
+  <p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p><p>space-1</p></div>
+</div>
+
+<script>
+	document.addEventListener("scroll", function() {
+	  const boxheight = document.querySelector(".box").clientHeight;
+	  console.log(boxheight)
+	  const el = document.getElementById("Navigation");
+	  if (document.body.scrollTop > boxheight || document.documentElement.scrollTop > boxheight){
+		el.classList.add("fixed_navbar");
+	  } 
+	  else {
+		el.classList.remove("fixed_navbar");
+	  }
+	});
+	
+/*
+	document.addEventListener("scroll", function() {
+	  const el = document.getElementById("Navigation");
+	  let rect = el.getBoundingClientRect();
+	  if (rect.top <= 0) {
+		el.classList.add("fixed_navbar");
+		console.log("less than");
+	  } 
+	
+	  else {
+		el.classList.remove("fixed_navbar");
+		console.log("greater than");
+	  }
+	});
+*/
+</script>
+</body>
+</html>
