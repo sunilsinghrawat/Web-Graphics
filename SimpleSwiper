@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Rolex</title>
+	<meta name="description" content="description" />
+	<meta name="author" content="author" />
+	<meta name="keywords" content="keywords" />
+	<link rel="stylesheet" href="css/head-foot.css" />
+
+
+	<meta charset="UTF-8" />
+	<meta name="robots" content="noindex" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body class="body-wrapper">
+
+	<div class="main_wrapper product-page">
+
+		<!-- Slider main container -->
+		<div class="swiper">
+		  <!-- Additional required wrapper -->
+		  <div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide">Slide 1</div>
+			<div class="swiper-slide">Slide 2</div>
+			<div class="swiper-slide">Slide 3</div>
+			...
+		  </div>
+		  <!-- If we need pagination -->
+		  <div class="swiper-pagination"></div>
+
+		  <!-- If we need navigation buttons -->
+		  <div class="swiper-button-prev"></div>
+		  <div class="swiper-button-next"></div>
+
+		  <!-- If we need scrollbar -->
+		  <div class="swiper-scrollbar"></div>
+		</div>
+
+
+		</div>
+
+<style>
+.swiper-slide{min-height:200px;border:1px solid #f00;}
+</style>
+
+<script>
+	const abc = new Swiper('.swiper', {
+	  slidesPerView: 1,
+
+	  pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+	  // Navigation arrows
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+
+	  // And if we need scrollbar
+	  scrollbar: {
+		el: '.swiper-scrollbar',
+	  },
+	});
+</script>
+
+
+	</div>
+	
+
+</body>
+
+</html>
