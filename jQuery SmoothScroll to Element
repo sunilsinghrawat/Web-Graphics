@@ -1,0 +1,94 @@
+<style>
+.popup-mdl{border:1px solid #333;padding:20px;}
+.ele{height:400px;background:#ccc;margin:20px;}
+</style>
+<a href="javascript:void(0)" class="link-btn">form here.</a> 
+
+<div class="ele"></div><div class="ele"></div>
+<hr>
+<div class="link-form">
+  <div class="popup-container">
+    <div class="popup-content-wrapper">
+      <div class="popup-close"><span class="close-icon"></span></div>
+	
+       <form id="faq-form" class="contact-form" novalidate="novalidate">
+        <div class="form-header">
+          <h3>Faq Heading</h3>
+        </div>
+
+
+        <div class="form-field group-field">
+          <div class="field-wrap text-field">
+            <input data-validate="{required:true, 'validate-no-empty':true}" type="text" id="firstname" name="firstname" value="" placeholder="First Name">
+          </div>
+          <div class="field-wrap text-field">
+            <input data-validate="{required:true, 'validate-no-empty':true}" type="text" id="lastname" name="lastname" value="" placeholder="Last Name">
+          </div>
+        </div>
+
+        <div class="form-field text-field">
+          <div class="field-wrap">
+            <input data-validate="{required:true, 'validate-email':true,equalTo:'#email'}" type="text" id="email" name="email" title="Enter Email Address" value="" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="form-field checbox-field">
+          <div class="field-wrap">
+            <input type="checkbox" id="sendInfo" name="newsletter" value="1" checked="checked">
+            <label for="sendInfo"> I would also like to receive marketing information about Favre Leuba products or
+              services. We may send you this information using e-mail, text, telephone or post.</label>
+          </div>
+        </div>
+
+        <button class="stripe-button-container" id="product_addtocart_form" style="display:none;">
+         
+        </button>
+
+      </form>
+	  
+    </div>
+  </div>
+</div>
+<hr>
+<div class="ele"></div><div class="ele"></div><div class="ele"></div><div class="ele"></div><div class="ele"></div><div class="ele"></div>
+<a href="javascript:void(0)" class="link-btn">form here.</a> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $('.link-btn').on('click', function(event) {
+      event.preventDefault();
+      const targetElement = $('.link-form')[0];
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+	  
+	  
+  });
+  
+  <!-- $('.link-btn').on('click', function(event) { -->
+		<!-- event.preventDefault(); -->
+		
+		<!-- // Get the target element's position relative to the document -->
+		<!-- const targetElement = $('.link-form')[0]; -->
+		<!-- const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset; -->
+		
+		<!-- // Calculate the final position with the offset -->
+		<!-- const offsetPosition = elementPosition - 50; -->
+		
+		<!-- // Scroll to the calculated position smoothly -->
+		<!-- window.scrollTo({ -->
+			<!-- top: offsetPosition, -->
+			<!-- behavior: 'smooth' -->
+		<!-- }); -->
+	<!-- }); -->
+  
+  <!-- $('.link-btn').on('click', function(event) { -->
+    <!-- event.preventDefault(); -->
+		<!-- $('html, body').animate({ -->
+			<!-- scrollTop: $('.link-form').offset().top + 10 -->
+		<!-- }, 'smooth'); -->
+  <!-- }); -->
+
+/*
+ require(["jquery"], function ($) {
+ 	 
+ });
+*/	 
+</script>
