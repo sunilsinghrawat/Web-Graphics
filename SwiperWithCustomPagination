@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Custom Swiper fraction No</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <style>
+		.swiper-slide{min-height:200px;}
+		.swiper{overflow:hidden;}
+		.swiper-slide{width:25%!important;}
+		.in-sl{border:1px solid #ccc;padding:10px 10px;height:100%;}
+	</style>
+</head>
+
+<body class="body-wrapper">
+
+	<div class="main_wrapper product-page">
+
+		<!-- Slider main container -->
+		<div class="swiper">
+		  <!-- Additional required wrapper -->
+		  <div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide"><div class="in-sl">Slide 1</div></div>
+			<div class="swiper-slide"><div class="in-sl">Slide 2</div></div>
+            <div class="swiper-slide"><div class="in-sl">Slide 3</div></div>
+            <div class="swiper-slide"><div class="in-sl">Slide 4</div></div>
+            <div class="swiper-slide"><div class="in-sl">Slide 5</div></div>
+            <div class="swiper-slide"><div class="in-sl">Slide 6</div></div>
+            <div class="swiper-slide"><div class="in-sl">Slide 7</div></div>
+            <div class="swiper-slide"><div class="in-sl">Slide 8</div></div>
+            <div class="swiper-slide"><div class="in-sl">Slide 9</div></div>
+            <div class="swiper-slide"><div class="in-sl">Slide 10</div></div>
+		  </div>
+		  <!-- If we need pagination swiper-pagination-->
+		  <div class="custom-pagination">
+			<span>01</span> / <span>03</span>
+		  </div>
+
+		  <!-- If we need navigation buttons -->
+		  <div class="swiper-button-prev"></div>
+		  <div class="swiper-button-next"></div>
+
+		  <!-- If we need scrollbar -->
+		  <div class="swiper-scrollbar"></div>
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script>
+		var customCheck = true; 
+		const abc = new Swiper('.swiper', {
+		  slidesPerView: 'auto',
+		  
+		  autoplay: {
+			delay: 5000,
+			//disableOnInteraction: false
+		  },
+		 /* pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		  },
+		*/
+		
+		  // Navigation arrows
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+
+		  // And if we need scrollbar
+		  scrollbar: {
+			el: '.swiper-scrollbar',
+			//hide: false,
+		  },
+		/* 
+			pagination: {
+			el: ".custom-pagination",
+			type: "fraction",
+		  },
+		  */
+	  
+		breakpoints: {
+			
+				// when window width is >= 767px
+				767: {
+					pagination: {
+						//el: '.swiper-pagination',
+						el: '.custom-pagination',
+						type: 'custom',
+						renderCustom:	function(swiper, current, total) {
+							var customCurrent = current+3;
+							var customTotal = total+3;	
+									  
+							if(customCurrent == customTotal && customCheck) {
+								customCheck = false;  
+								$(".swiper-button-next").click(); 
+							} 
+							  
+							if(customCurrent > customTotal) { customCurrent = customTotal; }
+							return '<span class="swiper-pagination-current">' + customCurrent + '</span> / <span class="swiper-pagination-total">' + customTotal + '</span>';
+					  }
+					}
+				},
+				// when window width is >= 1100px
+				1100: {
+					pagination: {
+						el: '.custom-pagination',
+						type: 'custom',
+						renderCustom:	function(swiper, current, total) {
+							var customCurrent = current+3;
+							var customTotal = total+3;	
+									  
+							if(customCurrent == customTotal && customCheck) {
+								customCheck = false;  
+								$(".swiper-button-next").click(); 
+							} 
+							  
+							if(customCurrent > customTotal) { customCurrent = customTotal; }
+							return '<span class="swiper-pagination-current">' + customCurrent + '</span> / <span class="swiper-pagination-total">' + customTotal + '</span>';
+					  }
+					}
+				}
+			},
+				
+		});
+	</script>
+
+
+</body>
+
+</html>
