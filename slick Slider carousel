@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<style>
+	
+			
+			.container{max-width:1280px;margin:0 auto;}
+			img{max-width:100%;}
+			
+			
+			
+			.card-slider .slick-dots li button:before{height:3px!important;content:""!important;background:#000;}
+			.card-slider .slick-prev , .card-slider .slick-next{z-index:1;border:1px solid #fff;width: 35px;height: 35px;border-radius:100%;top: 30%;box-shadow:0px 0px 10px rgba(0,0,0,.2);background: #fff;display:flex;align-items:center;justify-content:center;}
+			
+			.card-slider .slick-prev:before , .card-slider .slick-next:before , 
+			.slider-arrow .slick-prev:before , .slider-arrow .slick-next:before
+			{content: "";width: 7px;height: 7px;border-top: 1px solid #000;border-right: 1px solid #000;display: inline-block;opacity: 1;transform: rotate(45deg);}
+			
+			.card-slider .slick-prev:before, .slider-arrow .slick-prev:before{transform: rotate(-135deg);}
+			.card-slider .slick-prev, .slider-arrow .slick-prev{left:-10px;}
+			.card-slider .slick-next, .slider-arrow .slick-next{right: -10px;}
+			.dot-slider .slick-dots li, .dot-slider .slick-dots li button:before{width:12px;height:12px;}
+			.dot-slider .slick-dots li{margin:0px 3px;}
+			.dot-slider .slick-dots li button{border:1px solid #dfdfdf;border-radius:100%;padding:0px;width:10px;height:10px;}
+			.dot-slider .slick-dots li.slick-active button{background:#dfdfdf;}
+			.dot-slider .slick-dots li button:before{display:none;}
+			
+		
+			.small-slider{max-width:700px;margin:0 auto;}
+			
+						
+	</style>
+	
+</head>
+ 
+<body>
+
+<div class="container">
+
+  
+  <div class="section-wrap">
+	
+	<div class="card-wrap card-wrap-img card-slider">
+
+		<div class="card">
+			<a href="javascript:void(0)" class="card-link">
+				<div class="card-img">
+					
+				</div>
+				<div class="card-des">
+					<h4 class="card-heading">Card Heading</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when </p>
+				</div>
+			</a>
+		</div>
+
+		<div class="card ">
+			<a href="javascript:void(0)" class="card-link">
+				<div class="card-img">
+					
+				</div>
+				<div class="card-des">
+					<h4 class="card-heading">Card Heading</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="card">
+			<a href="javascript:void(0)" class="card-link">
+				<div class="card-img">
+					
+				</div>
+				<div class="card-des">
+					<h4 class="card-heading">Card Heading</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="card">
+		<a href="javascript:void(0)" class="card-link">
+			
+			<div class="card-des">
+				<h4 class="card-heading">Card Heading</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+			</div>
+		</a>
+	</div>
+
+	</div>
+	
+  </div>
+  
+  <div class="section-wrap section-wrap-center">
+	<div class="heading-wrap">
+	<br>
+	<br>
+	<br>
+	<br>
+	</div>
+	<div class="card-wrap single-slider slider-arrow small-slider dot-slider">
+
+		<div class="card">
+				<div class="card-des">
+					<h4 class="card-heading">Card Heading</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when </p>
+				</div>
+		</div>
+
+		<div class="card ">
+		
+				<div class="card-des">
+					<h4 class="card-heading">Card Heading</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+				</div>
+		
+		</div>
+
+		<div class="card">
+		
+				<div class="card-des">
+					<h4 class="card-heading">Card Heading</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+				</div>
+		
+		</div>
+
+		<div class="card">
+			<div class="card-des">
+				<h4 class="card-heading">Card Heading</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+			</div>
+		</div>
+
+	</div>
+  </div>
+  
+</div>
+ 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+
+<script>
+
+$('.card-slider').slick({
+	slidesToShow: 3,
+	dots: true,
+	arrows: true,
+	//centerMode: true,
+	//centerPadding: '70px'
+	responsive: [
+	{
+	  breakpoint: 992,
+	  settings: {
+		arrows: true,
+		//centerMode: true,
+		//centerPadding: '70px',
+		slidesToShow: 2
+	  }
+	},
+	{
+	  breakpoint: 480,
+	  settings: {
+		arrows: false,
+		//centerMode: true,
+		centerPadding: '30px',
+		slidesToShow: 1
+	  }
+	}
+  ]
+  
+ });
+ 
+ $('.single-slider').slick({
+	slidesToShow: 1,
+	dots: true,
+	arrows: true,
+	//centerMode: true,
+	//centerPadding: '70px'
+	  
+ });
+ 
+</script>
+
+</body>
+ 
+</html>
