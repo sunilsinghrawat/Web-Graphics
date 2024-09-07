@@ -15,9 +15,9 @@
 	</style>
 </head>
 
-<body class="body-wrapper">
+<body>
 
-	<div class="main_wrapper product-page">
+	<div class="wrap">
 
 		<!-- Slider main container -->
 		<div class="swiper">
