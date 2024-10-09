@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tab list show </title>
+<style>
+
+.list-tab{width:32%;border-bottom:1px solid #ccc;padding:10px 0px;}
+.list-desc{display:none;}
+.list-active .list-desc {display:flex;}
+
+
+</style>
+</head>
+<body>
+
+<div class="main-wrap">
+ 
+	<div class="list-item list-active">
+		<div class="list-tab">
+			Main Heading
+		
+		</div>
+
+		<div class="list-desc">
+		<br>
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+			
+		</div>
+
+	</div>
+  <br/>
+  <hr>
+  <br/>
+  
+	<div class="list-item">
+
+		<div class="list-tab">
+			Main Heading
+		</div>
+
+		<div class="list-desc">
+			<br>	Lorem ipsum 
+		</div>
+
+	</div>
+  
+</div>
+</body>
+
+<script>
+
+document.querySelectorAll(".list-tab").forEach((tab) => {
+  tab.addEventListener("click", function() {
+    document.querySelectorAll(".list-item").forEach(item => item.classList.remove("list-active"));
+    tab.closest(".list-item").classList.add("list-active");
+  });
+});
+
+
+</script>
+</html>
