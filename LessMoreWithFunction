@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Less More with Function</title>
+</head>
+<body>
+<div class="read-less-wrap">
+  <div class="less-cnt"><p>What is Lorem Ipsum?</p></div>
+  <div class="more-cnt" style="display:none;"><p>Lorem Ipsum is simply dummy text </p></div>
+  <a href="javascript:void(0)" id="more" onclick="more();">Read More</a>
+  <a href="javascript:void(0)" id="less" onclick="less();" style="display:none;">Read Less</a>
+</div>
+  
+
+  <script>
+    function more() {	
+      document.getElementById("more").style.display = "none";
+      document.querySelector(".more-cnt").style.display = "block";
+      document.getElementById("less").style.display = "block";
+      
+    }
+
+    function less() {
+      document.querySelector(".more-cnt").style.display = "none";
+      document.getElementById("more").style.display = "block";
+      document.getElementById("less").style.display = "none";
+    }
+  </script>
+</body>
+</html>
