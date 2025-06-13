@@ -1,0 +1,13 @@
+HTML entities/Unicoe Characters are special character sequences used in HTML to represent characters that would otherwise be interpreted as code or are not available on a standard keyboard.
+HTML entities start with an ampersand (&), are followed by a name or a number, and end with a semicolon (;). 
+
+unicode characters
+Unicode symbols cheatsheet
+https://www.vertex42.com/ExcelTips/unicode-symbols.html
+Exmaple
+&#128936;
+&#9776;
+
+HTML Entity cheatsheet
+https://quickref.me/html-char.html
+&times;
