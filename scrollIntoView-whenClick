@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollIntoView  Js</title>
+    <style>
+        #myList {
+            height: 300px; /* Set a fixed height for scrolling */
+            overflow-y: scroll; /* Enable vertical scrolling */
+            border: 1px solid #ccc;
+            list-style:none;
+            padding:0px;
+        }
+        #myList li {
+            padding: 30px 10px;
+            border-bottom: 1px dashed #eee;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7 Last</li>
+   
+    </ul>
+
+    <button id="scrollToLastBtn">Scroll to Last Item</button>
+	
+    <script>
+    	
+        document.querySelectorAll("#myList li").forEach((t)=>{
+        	t.addEventListener('click',function(){
+				this.scrollIntoView({
+                	behavior:'smooth',
+                    block:'center', //vertical alignment "start", "center", "end", "nearest"
+                    inline:'nearest' //horizontal alignment "start", "center", "end", "nearest"
+                })
+			})
+		})
+        
+        document.getElementById('scrollToLastBtn').addEventListener('click', function() {
+            const ul = document.getElementById('myList');
+            const lastLi = ul.lastElementChild; // Gets the last child element (the last li)
+
+            if (lastLi) {
+                lastLi.scrollIntoView({ behavior: 'smooth', block: 'end' }); // Scrolls to the end of the last li
+            }
+        });
+    </script>
+
+</body>
+</html>
