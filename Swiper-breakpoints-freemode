@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper-slider</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<style>
+		
+		*{padding:0px;margin:0px;}
+		.swiper-slider-main-wrap{position:relative;overflow:hidden;}
+		.swiper-slide img{max-height:300px;height:300px;width:100%;object-fit:cover;}
+		.custom-slide-box{min-height:200px;display:flex;align-items:center;justify-content:center;border:10px solid #ccc;background:#f2f2f2}
+		@media(max-width:767px){
+			.swiper-slide{max-width:330px;}
+		}
+	</style>
+     </head>
+  <body>
+		
+		<div class="swiper-slider-main-wrap">
+			<div class="m-bnr-swiper swiper-container">
+			  <div class="swiper-wrapper">
+				
+				<div class="swiper-slide">
+					<div class="custom-slide-box">Slide Box</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="custom-slide-box">Slide Box</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="custom-slide-box">Slide Box</div>
+				</div>
+
+			  </div>
+			  
+			</div>
+			
+			<div class="m-swiper-prev">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="21" viewBox="0 0 10 21" fill="none">
+				<path
+				  d="M9.31201 20.1023L4.06401 10.2573L9.31201 0.412354H5.05601L1.14441e-05 10.2573L5.05601 20.1023H9.31201Z"
+				  fill="black"></path>
+			  </svg>
+			</div>
+			<div class="m-swiper-next">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="21" viewBox="0 0 10 21" fill="none">
+				<path
+				  d="M0.687988 20.1023L5.93599 10.2573L0.687988 0.412354H4.94399L9.99999 10.2573L4.94399 20.1023H0.687988Z"
+				  fill="black"></path>
+			  </svg>
+			</div>
+			
+			<div class="m-pagination"></div>
+			
+			  <!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>					
+
+  </body>
+  <script>
+	  var swiper = new Swiper('.m-bnr-swiper', {
+		   
+              navigation: {
+                nextEl: '.m-swiper-next',
+                prevEl: '.m-swiper-prev',
+              },
+			  autoplay: {
+				delay: 5000,
+			  },
+              speed: 1000,
+			  pagination: {
+                  el: ".m-pagination",
+                  clickable: true,
+                },
+			  scrollbar: {
+				el: '.swiper-scrollbar',
+			  },
+			  
+			  breakpoints: {
+				0: { // Mobile
+					slidesPerView: 'auto',
+					//centeredSlides: true,
+					spaceBetween: 16,
+					freeMode: true,
+				},
+				768: { // Tablet & Desktop
+					slidesPerView: 1,
+					//centeredSlides: false,
+					spaceBetween: 0,
+					//freeMode: false,
+				}
+			}
+						
+		});
+			
+  </script>
+</html>
+
+
+	
